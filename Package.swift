@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Mixpanel",
+    name: "Mixpanel-Swift",
     platforms: [
       .iOS(.v11),
       .tvOS(.v11),
@@ -11,11 +11,11 @@ let package = Package(
       .watchOS(.v4)
     ],
     products: [
-        .library(name: "Mixpanel", targets: ["Mixpanel"])
+        .library(name: "Mixpanel-Swift", targets: ["Mixpanel-Swift"])
     ],
     targets: [
         .target(
-            name: "Mixpanel",
+            name: "Mixpanel-Swift",
             path: "Sources",
             resources: [
                 .copy("Mixpanel/PrivacyInfo.xcprivacy")
